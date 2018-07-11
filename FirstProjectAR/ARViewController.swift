@@ -30,11 +30,12 @@ class ARViewController: UIViewController {
     }
 
     func addBox() {
+
         let box = SCNBox(width: 0.1, height: 0.1, length: 0.1, chamferRadius: 0.1)
 
         let boxNode = SCNNode()
         boxNode.geometry = box
-        //boxNode.addAnimation(<#T##animation: SCNAnimationProtocol##SCNAnimationProtocol#>, forKey: <#T##String?#>)
+        //boxNode.addAnimation(<#T##animation: SCNAnimationProtocol##SCNAnimationProtocol#>, forKey: <#T##String?#>
         boxNode.position = SCNVector3(0, 0, -0.2)
 
         let scene = SCNScene()
